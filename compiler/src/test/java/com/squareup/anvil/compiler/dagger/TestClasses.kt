@@ -6,6 +6,8 @@ package com.squareup.anvil.compiler.dagger
 
 object Factory
 
-abstract class OuterClass constructor(innerClass: InnerClass) {
+abstract class OuterClass constructor(
+  @Suppress("UNUSED_PARAMETER") innerClass: InnerClass
+) {
   class InnerClass
 }
